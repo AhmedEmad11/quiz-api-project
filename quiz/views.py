@@ -20,7 +20,7 @@ class QuestionList(generics.ListCreateAPIView):
     serializer_class = QuestionSerializer
 
 class GetTest(generics.ListCreateAPIView):
-    queryset = Question.objects.order_by('?')[:2]
+    queryset = Question.objects.order_by('?')[:5]
     
     serializer_class = QuestionSerializer
 
